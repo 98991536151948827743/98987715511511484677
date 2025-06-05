@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Tag, ShoppingBag } from 'lucide-react';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { useState } from 'react';
 
 export default function AccessoriesPage() {
 
@@ -103,8 +105,66 @@ export default function AccessoriesPage() {
       image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749142074/494576852_2009694556224921_7631472830000184284_n_lc7t3z.jpg',
       description: 'Swing into cuteness with this mini Spider-Man plush, crafted with care and vibrant yarn.',
     },
-
-  ];
+    {
+      id: 15,
+      name: 'Sunny Yarn Bloom',
+      price: 'DM US',
+      image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749145422/494573613_974897431388546_225981552553815176_n_g3nr9b.jpg',
+      description: 'Bright and cheerful sunflower made with yarn, adds sunshine to any space instantly.',
+    },
+    {
+      id: 16,
+      name: 'Buzzing Blooms',
+      price: 'DM US',
+      image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749145423/494577755_1666146570734555_2200770132797644529_n_a6vzjc.jpg',
+      description: 'Charming bouquet featuring sunflowers, daisies, and a smiling crochet bee.',
+    },
+    {
+      id: 17,
+      name: 'Sunny Bloom',
+      price: 'DM US',
+      image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749145423/494578512_3331692243637801_7979868847022127259_n_cg47ap.jpg',
+      description: 'A vibrant handmade sunflower bouquet bringing warmth, cheer, and sunshine vibes anywhere.',
+    },
+    {
+      id: 18,
+      name: 'LoveLoop Bouquet',
+      price: 'DM US',
+      image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749145423/494575739_732230792697668_6480373223941663554_n_gtonq6.jpg',
+      description: 'A romantic bouquet featuring a crochet heart and roses, wrapped with elegant baby’s breath.',
+    },
+    {
+      id: 19,
+      name: 'Blush Blooms',
+      price: 'DM US',
+      image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749145423/494580088_1831489867412617_2644270622543392303_n_depm77.jpg',
+      description: 'A delicate bouquet of handcrafted roses and daisies wrapped in vintage paper.',
+    },
+    {
+      id: 20,
+      name: 'BearHug Charm',
+      price: 'DM US',
+      image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749145423/494578801_1087430059904763_5585535066048687766_n_ozzjgv.jpg',
+      description: 'Sweet mini teddy bear holding a heart, perfect for gifting love and warmth.',
+    },
+    {
+      id: 21,
+      name: 'Blossom Basket',
+      price: 'DM US',
+      image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749145426/495047292_1107513837886569_7769339689390133007_n_ohtcg6.jpg',
+      description: 'Charming basket filled with colorful crocheted flowers, handmade to brighten your day.',
+    },
+    {
+      id: 22,
+      name: 'EverBloom Wrap”',
+      price: 'DM US',
+      image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749145427/504294181_1256945942460171_256558428770931429_n_hip9ab.jpg',
+      description: 'Elegant wrapped bouquet, zero-wilt gift for any special occasion.',
+    }
+  ]
+    const [showAll, setShowAll] = useState(false);
+    const visibleImages = showAll ? accessories : accessories.slice(0, 8);
+  ;
 
   return (
     <div className="py-12">
@@ -121,7 +181,7 @@ export default function AccessoriesPage() {
 
       <section className="mb-16 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {accessories.map((item, index) => (
+          {visibleImages.map((item, index) => (
             <div
               key={item.id}
               className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-6 flex flex-col items-center text-center hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate-fade-in-up"
@@ -145,6 +205,11 @@ export default function AccessoriesPage() {
             </div>
           ))}
         </div>
+        {!showAll && (<div className="flex flex-col sm:flex-row justify-center mt-9 space-y-4 sm:space-y-0 sm:space-x-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }} >
+            <button onClick={() => setShowAll(true)} className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-full shadow-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105" >
+            View More
+        </button>
+            </div>)}
       </section>
       <section className="text-center px-4 mt-16">
         <h2 className="text-3xl font-bold text-white mb-6 animate-fade-in-up">

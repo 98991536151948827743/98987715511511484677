@@ -54,7 +54,7 @@ export default function AboutPage() {
           <div className="flex flex-col md:flex-row items-center md:space-x-8">
             <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
               <img
-                src="https://placehold.co/300x300/6b21a8/ffffff?text=Diya"
+                src="https://res.cloudinary.com/doejabjai/image/upload/v1749146785/343154035_1106184210342246_1255036080098298844_n_ka5isw.jpg"
                 alt="Diya - Founder & Artisan"
                 className="w-48 h-48 md:w-full md:h-auto object-cover rounded-full md:rounded-xl shadow-lg border border-white/20"
               />
@@ -81,7 +81,7 @@ export default function AboutPage() {
           <div className="flex flex-col md:flex-row items-center md:space-x-8">
             <div className="md:w-1/2 mb-6 md:mb-0">
               <img
-                src="https://placehold.co/600x400/8b5cf6/ffffff?text=Our+Story"
+                src="https://res.cloudinary.com/doejabjai/image/upload/v1749146600/full_square_crochet_collage_bt3oqq.jpg"
                 alt="Our Story"
                 className="w-full h-auto rounded-xl shadow-lg border border-white/20"
               />
