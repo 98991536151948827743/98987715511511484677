@@ -1,16 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingBag, MessageSquare, Info, Sparkles, Heart, Award } from 'lucide-react'; // Added Sparkles, Heart, Award for new sections
-
+import { ShoppingBag, MessageSquare, Info, Sparkles, Heart, Award } from 'lucide-react'; 
 export default function HomePage() {
-  // Quick links for the "Explore Our Hub" section
   const quickLinks = [
     { name: 'Shop Accessories', path: '/accessories', icon: ShoppingBag, description: 'Explore our unique handmade accessories.' },
     { name: 'Get in Touch', path: '/contact', icon: MessageSquare, description: 'Have questions? We\'d love to hear from you!' },
     { name: 'About Diya', path: '/about', icon: Info, description: 'Learn more about the artisan behind the creations.' },
   ];
 
-  // Placeholder data for featured products
   const featuredProducts = [
     { id: 1, name: 'Cozy Crochet Scarf', image: 'https://placehold.co/300x200/a78bfa/ffffff?text=Scarf', price: '$45.00' },
     { id: 2, name: 'Amigurumi Bear', image: 'https://placehold.co/300x200/c084fc/ffffff?text=Bear', price: '$30.00' },
@@ -19,7 +16,6 @@ export default function HomePage() {
 
   return (
     <div className="py-12">
-      {/* Hero Section */}
       <section className="text-center mb-16 px-4">
         <h1 className="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent leading-tight mb-4 animate-fade-in-down">
           Crochet Hub by Diya
@@ -36,7 +32,6 @@ export default function HomePage() {
         </Link>
       </section>
 
-      {/* Why Us Section */}
       <section className="mb-16 px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-10 animate-fade-in-up">
           Why Choose Crochet Hub by Diya?
@@ -60,7 +55,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Creations Section (formerly "Featured Products") */}
       <section className="mb-16 px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-10 animate-fade-in-up">
           Our Special Creations
@@ -81,7 +75,7 @@ export default function HomePage() {
               <h3 className="text-xl font-semibold text-white mb-2">{product.name}</h3>
               <p className="text-purple-300 text-lg font-bold mb-4">{product.price}</p>
               <Link
-                to="/accessories" // This link is now explicitly for "Know More" to Accessories
+                to="/accessories"
                 className="inline-block px-6 py-2 bg-purple-700 text-white rounded-full hover:bg-purple-800 transition-colors duration-200 text-sm"
               >
                 Know More
@@ -90,8 +84,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-      
-      {/* Quick Links Section (Keeping it as originally planned) */}
       <section className="mb-16 px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-10 animate-fade-in-up">
           Connect With Us
@@ -115,7 +107,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Custom Animations - Keep these for the animations to work */}
       <style jsx>{`
         @keyframes fadeInDown {
           from { opacity: 0; transform: translateY(-20px); }

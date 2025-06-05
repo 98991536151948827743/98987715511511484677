@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // In case you want to link to individual product pages later
-import { Tag, ShoppingBag } from 'lucide-react'; // Icons for pricing or shopping
+import { Link } from 'react-router-dom';
+import { Tag, ShoppingBag } from 'lucide-react';
 
 export default function AccessoriesPage() {
-  // Placeholder data for your crochet accessories
+
   const accessories = [
     {
       id: 1,
       name: 'Earthy Tone Crochet Scarf',
-      price: '₹1,200', // Using INR currency
+      price: '₹1,200', 
       image: 'https://placehold.co/300x200/9ca3af/ffffff?text=Scarf+A',
       description: 'A beautifully soft scarf, perfect for cozy evenings. Handmade with premium yarn.',
     },
@@ -51,7 +51,7 @@ export default function AccessoriesPage() {
 
   return (
     <div className="py-12">
-      {/* Page Header */}
+
       <section className="text-center mb-12 px-4">
         <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent leading-tight mb-4 animate-fade-in-down">
           Our Handmade Accessories
@@ -61,7 +61,7 @@ export default function AccessoriesPage() {
         </p>
       </section>
 
-      {/* Accessories Grid */}
+
       <section className="mb-16 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {accessories.map((item, index) => (
@@ -83,17 +83,12 @@ export default function AccessoriesPage() {
                 <Tag size={20} className="text-pink-400" />
                 <span>{item.price}</span>
               </p>
-              <p className="text-white/70 text-sm mb-4 flex-grow">{item.description}</p> {/* flex-grow to push button to bottom */}
-              
-              {/* Call to Action Button */}
-              {/* You can change this to an "Add to Cart" button if you implement cart functionality */}
+              <p className="text-white/70 text-sm mb-4 flex-grow">{item.description}</p>
 
             </div>
           ))}
         </div>
       </section>
-
-      {/* Call to Action (Optional, for more engagement) */}
       <section className="text-center px-4 mt-16">
         <h2 className="text-3xl font-bold text-white mb-6 animate-fade-in-up">
           Can't find what you're looking for?
@@ -107,8 +102,6 @@ export default function AccessoriesPage() {
           Request a Custom Order
         </Link>
       </section>
-
-      {/* Custom Animations (reused for consistency) */}
       <style jsx>{`
         @keyframes fadeInDown {
           from { opacity: 0; transform: translateY(-20px); }

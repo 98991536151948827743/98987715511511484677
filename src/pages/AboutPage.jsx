@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Sparkles, Heart, Award, Gem, Handshake, Lightbulb } from 'lucide-react'; // Lucide icons for sections
+import { Sparkles, Heart, Award, Gem, Handshake, Lightbulb } from 'lucide-react';
 
 export default function AboutPage() {
   const values = [
@@ -13,7 +13,6 @@ export default function AboutPage() {
 
   return (
     <div className="py-12">
-      {/* Hero Section */}
       <section className="text-center mb-16 px-4">
         <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent leading-tight mb-4 animate-fade-in-down">
           About Crochet Hub by Diya
@@ -24,11 +23,11 @@ export default function AboutPage() {
       </section>
 
 
-      {/* Our Values Section */}
       <section className="mb-16 px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-10 animate-fade-in-up">
           Our Core Values
         </h2>
+        {/* Hve look---kyuki.....  */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value, index) => {
             const Icon = value.icon;
@@ -46,8 +45,7 @@ export default function AboutPage() {
           })}
         </div>
       </section>
-      
-      {/* Meet Diya Section */}
+
       <section className="mb-16 px-4">
         <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8 md:p-12 shadow-lg animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <h2 className="text-3xl font-bold text-white mb-6 text-center md:text-left">
@@ -55,9 +53,8 @@ export default function AboutPage() {
           </h2>
           <div className="flex flex-col md:flex-row items-center md:space-x-8">
             <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
-              {/* Placeholder image for Diya */}
               <img
-                src="https://placehold.co/300x300/6b21a8/ffffff?text=Diya" // A more personal placeholder
+                src="https://placehold.co/300x300/6b21a8/ffffff?text=Diya"
                 alt="Diya - Founder & Artisan"
                 className="w-48 h-48 md:w-full md:h-auto object-cover rounded-full md:rounded-xl shadow-lg border border-white/20"
               />
@@ -76,7 +73,6 @@ export default function AboutPage() {
       </section>
 
 
-      {/* Our Story Section */}
       <section className="mb-16 px-4">
         <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8 md:p-12 shadow-lg animate-fade-in-up">
           <h2 className="text-3xl font-bold text-white mb-6 text-center md:text-left">
@@ -84,7 +80,6 @@ export default function AboutPage() {
           </h2>
           <div className="flex flex-col md:flex-row items-center md:space-x-8">
             <div className="md:w-1/2 mb-6 md:mb-0">
-              {/* Placeholder image for story */}
               <img
                 src="https://placehold.co/600x400/8b5cf6/ffffff?text=Our+Story"
                 alt="Our Story"
@@ -102,33 +97,19 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-
-
-      {/* Call to Action - Shop Now / Contact Us */}
       <section className="text-center px-4">
         <h2 className="text-3xl font-bold text-white mb-6 animate-fade-in-up">
           Ready to Explore Our Handcrafted World?
         </h2>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <Link
-            to="/accessories"
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-full shadow-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105"
-          >
+          <Link to="/accessories" className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-full shadow-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105" >
             Shop Now
           </Link>
-
-          <Link
-            to="/contact"
-            className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-bold rounded-full border border-white/20 shadow-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
-          >
-
+          <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-bold rounded-full border border-white/20 shadow-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105" >
             Contact Us
           </Link>
         </div>
       </section>
-
-      {/* Custom Animations (reused from HomePage and ContactPage) */}
       <style jsx>{`
         @keyframes fadeInDown {
           from { opacity: 0; transform: translateY(-20px); }
