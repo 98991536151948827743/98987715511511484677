@@ -205,7 +205,7 @@ export default function AccessoriesPage() {
             </div>
           ))}
         </div>
-        {!showAll && (<div className="flex   justify-center mt-9 space-y-4 sm:space-y-0 sm:space-x-6 animate-fade-in-up sm:text-center" style={{ animationDelay: '0.6s' }} >
+        {!showAll && (<div className="flex   justify-center mt-9 space-y-4 sm:space-y-0 sm:space-x-6 animate-fade-in-up " style={{ animationDelay: '0.6s' }} >
             <button onClick={() => setShowAll(true)} className="text-center inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-full shadow-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105" >
             View More
         </button>

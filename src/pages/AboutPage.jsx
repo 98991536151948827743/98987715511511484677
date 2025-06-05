@@ -101,14 +101,15 @@ export default function AboutPage() {
         <h2 className="text-3xl font-bold text-white mb-6 animate-fade-in-up">
           Ready to Explore Our Handcrafted World?
         </h2>
-        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <Link to="/accessories" className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-full shadow-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105" >
-            Shop Now
-          </Link>
-          <Link to="/contact" className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-bold rounded-full border border-white/20 shadow-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105" >
-            Contact Us
-          </Link>
-        </div>
+<div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6 animate-fade-in-up sm:text-center" style={{ animationDelay: '0.6s' }}>
+  <Link to="/accessories" className="w-60 text-center inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-full shadow-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">
+    Shop Now
+  </Link>
+  <Link to="/contact" className="w-60 text-center inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white font-bold rounded-full border border-white/20 shadow-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+    Contact Us
+  </Link>
+</div>
+
       </section>
       <style jsx>{`
         @keyframes fadeInDown {

@@ -12,3 +12,7 @@ https://react-icons.github.io/react-icons/icons/io/
 
 timebachaogfbanao 😂
 git add . && git commit -m "Update all changes" && git push origin main
+
+
+git fetch origin
+git reset --hard origin/main
