@@ -8,6 +8,9 @@ export default defineConfig({
     react(),
     tailwindcss(), // <--- This line is crucial for Tailwind to be processed
   ],
+    server: {
+    port: 3000,
+  },
   build: {
     outDir: 'dist',
   },
