@@ -8,14 +8,17 @@ export default function Footer() {
 
 
   return (
-    <footer className="bg-white/5 backdrop-blur-sm border-t  border-white/10 mt-16 py-8 md:py-12 text-white/70 text-sm pb-0">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
+    <footer className="bg-white/5 backdrop-blur-sm border-t  border-white/10 mt-16 py-8 md:py-12 text-white/70 text-sm sm:py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0 ">
         <div className="text-center md:text-left">
-          <h3 className="text-lg font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
+
+
+          <h3 className="text-lg text-center font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
             Crochet Hub by Diya
           </h3>
-          <p>&copy; {currentYear} All rights reserved.</p>
-          <p className="text-white/50">Made with ❤️ by Rahul</p>
+          <p className='text-center'>Handcrafted with love,bringing warmth and unique style to your everyday.</p>
+          <p className='text-center'>&copy; {currentYear} All rights reserved.</p>
+
         </div>
         {/* Link wala Section */}
         <div className="text-center md:text-left">

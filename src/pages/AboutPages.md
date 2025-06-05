@@ -11,8 +11,4 @@ For React Icon please visit
 https://react-icons.github.io/react-icons/icons/io/
 
 timebachaogfbanao 😂
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git push -u origin main
+git add . && git commit -m "Update all changes" && git push origin main
