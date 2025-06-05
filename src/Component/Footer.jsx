@@ -34,13 +34,13 @@ export default function Footer() {
         <div className="text-center md:text-left">
           <h4 className="font-semibold text-white mb-3">Connect With Us</h4>
           <div className="flex justify-center md:justify-start space-x-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-200">
+            <a href="https://www.instagram.com/crochet.hub.by.diya/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-200">
               <FaInstagram size={24} />
             </a>            
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-200">
+            <a href="https://www.instagram.com/crochet.hub.by.diya/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-200">
               <FaWhatsapp size={24} />
             </a>
-            <a href="mailto:example@example.com" className="hover:text-white transition-colors duration-200">
+            <a href="mailto:diyaluther623@gmail.com" className="hover:text-white transition-colors duration-200">
               <Mail size={24} />
             </a>
           </div>

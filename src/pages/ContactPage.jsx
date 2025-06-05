@@ -1,11 +1,12 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'; // Lucide icons for contact info
+import { FaInstagram } from 'react-icons/fa';
 
 export default function ContactPage() {
   const contactInfo = [
-    { icon: MapPin, label: 'Address', value: 'WPB 160 Basti Sheikh, Jalandhar' },
-    { icon: Phone, label: 'Phone', value: '+91 9877511146' },
-    { icon: Mail, label: 'Email', value: 'hello@crochethubbydiya.com' },
+    { icon: MapPin, label: 'Address', value: '144002,Basti Sheikh, Jalandhar, Punjab' },
+    { icon: FaInstagram, label: 'DM on Instagram', value: 'https://www.instagram.com/crochet.hub.by.diya/' },
+    { icon: Mail, label: 'Email', value: 'diyaluther623@gmail.com' },
     { icon: Clock, label: 'Hours', value: 'Mon-Fri: 9 AM - 5 PM (IST)' },
   ];
   return (
