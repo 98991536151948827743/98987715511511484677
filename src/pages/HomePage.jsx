@@ -9,9 +9,9 @@ export default function HomePage() {
   ];
 
   const featuredProducts = [
-    { id: 1, name: 'Cozy Crochet Scarf', image: 'https://placehold.co/300x200/a78bfa/ffffff?text=Scarf', price: '$45.00' },
-    { id: 2, name: 'Amigurumi Bear', image: 'https://placehold.co/300x200/c084fc/ffffff?text=Bear', price: '$30.00' },
-    { id: 3, name: 'Boho Wall Hanging', image: 'https://placehold.co/300x200/d8b4fe/ffffff?text=Wall+Hanging', price: '$60.00' },
+    { id: 1, name: 'Cheeky bloom flower pot', image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749138522/495048418_3103229269834413_500170509775916424_n_okifku.jpg', price: 'DM US' },
+    { id: 2, name: 'Octopus keychain', image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749138665/494575300_1004835734785297_8755481623201899788_n_iiqb43.jpg', price: 'DM US' },
+    { id: 3, name: 'Single sunflower sticks', image: 'https://res.cloudinary.com/doejabjai/image/upload/v1749138737/494579753_723954477233489_5040608267233253853_n_ghqcvw.jpg', price: 'DM US' },
   ];
 
   return (
