@@ -1,10 +1,21 @@
 import React from 'react';
 import {   Mail } from 'lucide-react';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import {useEffect, useState } from 'react';
+import { h1 } from 'framer-motion/client';
 
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+ const [time, setTime] = useState(new Date().toLocaleTimeString());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date().toLocaleTimeString());
+    }, 1000);
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, []);
+
 
 
   return (
@@ -17,7 +28,8 @@ export default function Footer() {
             Crochet Hub by Diya
           </h3>
           <p className='text-center'>Handcrafted with love,bringing warmth and unique style to your everyday.</p>
-          <p className='text-center'>&copy; {currentYear} All rights reserved.</p>
+          <p className='text-center'>&copy; {new Date().getUTCFullYear()} All rights reserved.</p>
+          <p className='text-center'> Time: {time}</p>
 
         </div>
         {/* Link wala Section */}
@@ -44,6 +56,7 @@ export default function Footer() {
               <Mail size={24} />
             </a>
           </div>
+
         </div>
 
       </div>
